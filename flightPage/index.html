@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Libre+Baskerville&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Libre+Baskerville&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet"></head>
+<body>
+    <div class="navbar">
+        <div class="choiceBtn">
+            <button class=" flights choice">
+                <img src="../assets/airplane.svg"></img>
+                <span>Flights</span>
+            </button>
+            <div class="separator"></div>
+            <a class="button_link" href="http://127.0.0.1:3000/hotelsPage/index.html">
+                <button class="stays choice"> 
+                <img src="../assets/bed.svg"></img>
+                <span>Stays</span>
+            </button></a>
+        </div>
+        <a class="button_link" href="http://127.0.0.1:3000/landingPage/index.html"><img id="logo" src="../assets/logo3.svg" alt=""></a>
+        <div class="buttons">
+            <a class="button_link" href="http://127.0.0.1:3000/loginPage/index.html"><button class="login_flight_page">Login</button></a>
+            <button class="signUp_flight_page">Sign up</button>
+        </div>
+    </div>
+    <div class="flight_page_banner">
+        <div class="flight_page_title">
+            <h1>Make your travel whishlist, we’ll do the rest</h1>
+            <p>Special offers to suit your plan</p>
+        </div>
+        <div class="selector">
+            <div class="choiceBtn">
+                <h2>Where are you flying?</h2>
+            </div>
+            <form action="">
+                <fieldset class="form_destination grow">
+                    <legend>From - To</legend>
+                    <input class="textField" type="text" placeholder="Lahore - Karachi">
+                    <img id="arrows" src="../assets/trailing-icon.svg" alt="">
+                </fieldset> 
+                <fieldset class="form_trip">
+                    <legend>Trip</legend>
+                    <input class="textField" list="flightType" placeholder="One-way">
+                    <datalist id="flightType">
+                        <option value="One-way"></option>
+                        <option value="Round-trip"></option>
+                    </datalist>
+                </fieldset>
+                <fieldset class="form_dates grow">
+                    <legend>Depart - Return</legend>
+                    <input class="textField" type="text" placeholder="07 Nov 23 - 13 Nov 23">
+                </fieldset>
+                <fieldset class="form_Passenger grow">
+                    <legend>Passenger - Class</legend>
+                    <input class="textField" type="text" placeholder="1 Passenger,Economy">
+                </fieldset>
+            </form>
+            <br>
+            <div class="selector_button">
+                <button class="promo_code">
+                    + Add Promo Code                        
+                </button>
+                <button class="show_flight">
+                    <img src="../assets/Paper Plane.svg" alt="">
+                    <span>Show Flights</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="flight_page_location">
+        <div class="hero_section_top">
+            <div class="text">
+                <h2>Let's go places together</h2>
+                <p class="hero_section_p">Discover the latest offers and news and start planning your next trip with us.</p>
+            </div>
+            <button class="hero_section_button see_all_button">
+                See All
+            </button>
+        </div>
+        <div class="flight_page_location_image">
+
+        </div>
+    </div>
+    <div class="flight_page_fall_into_travel">
+        <div class="hero_section_top">
+            <div class="text">
+                <h2>Fall into travel</h2>
+                <p class="hero_section_p">Going somewhere to celebrate this season? Whether you’re going home or somewhere to roam, we’ve got the travel tools to get you to your destination.</p>
+            </div>
+            <button class="hero_section_button see_all_button">
+                See All
+            </button>
+        </div>
+        <div class="flight_page_fall_into_content">
+            <div class="flight_page_card melbourne">
+                <div class="flight_page_card_text">
+                    <div>
+                    <h3>Melbourne</h3>
+                    <p>An amazing journey</p>
+                </div>
+                    <h3>$ 700</h3>
+                </div>
+                <a  class="button_link" href=""><button>Book Flight</button></a>
+            </div>
+
+            <div class="flight_page_card paris">
+                <div class="flight_page_card_text">
+                    <div>
+                    <h3>Paris</h3>
+                    <p>A Paris Journey</p>
+                </div>
+                    <h3>$ 600</h3>
+                </div>
+                <a class="button_link" href="http://127.0.0.1:3000/ParisPage/index.html"><button>Book Flight</button></a>
+            </div>
+
+            <div class="flight_page_card london">
+                <div class="flight_page_card_text">
+                    <div>
+                    <h3>London</h3>
+                    <p>London eye adventure</p>
+                </div>
+                    <h3>$ 350</h3>
+                </div>
+                <a class="button_link" href="http://127.0.0.1:3000/londonPage/index.html"><button>Book Flight</button></a>
+            </div>
+
+            <div class="flight_page_card columbia">
+                <div class="flight_page_card_text">
+                    <div>
+                    <h3>Columbia</h3>
+                    <p>Amazing streets</p>
+                </div>
+                    <h3>$ 700</h3>
+                </div>
+                <a class="button_link" href=""><button>Book Flight</button></a>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+            <br>
+            <div class="footer">
+                <div class="footer_content" >
+                    <div id="logo">
+                        <img src="../assets/dark logo.svg" alt="">
+                        <div class="links">
+                            <img src="../assets/facebook.svg" alt="">
+                            <img src="../assets/twitter.svg" alt="">
+                            <img src="../assets/youtube.svg" alt="">
+                            <img src="../assets/instagram.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="list">
+                        <h3>Our Destinations</h3>
+                        <ul class="footer_list">
+                            <li>Canada</li>
+                            <li>Alaska</li>
+                            <li>France</li>
+                            <li>Iceland</li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <h3>Our Activities</h3>
+                        <ul class="footer_list">
+                            <li>Northern Lights</li>
+                            <li>Cruising & Sailing</li>
+                            <li>Multi-activities</li>
+                            <li>Kayaing</li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <h3>About Us</h3>
+                        <ul class="footer_list">
+                            <li>Our Story</li>
+                            <li>Work with us</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+</body>
+</html>

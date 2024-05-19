@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Libre+Baskerville&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Libre+Baskerville&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="landingPageBanner roundedBorder">
+        <div class="overlay roundedBorder">
+            <div class ="navbar">
+                <ul>
+                    <li><a class ="page_links" href="http://127.0.0.1:3000/landingPage/index.html">Home</a></li>
+                    <li><a class ="page_links" href="">Destinations</a></li>
+                    <li><a class ="page_links" href="">Contact Us</a></li>
+                </ul>
+                <a href="http://127.0.0.1:3000/landingPage/index.html"><img src="../assets/logo.png" alt="logo"></a>
+                <div class="buttons">
+                    <a class="button_link" href="http://127.0.0.1:3000/loginPage/index.html"><button class="login">Login</button></a>
+                    <a href=""><button class="signUp">Sign up</button></a>
+                </div>
+            </div>
+            <div class="title">
+                <h1 id="helpingOthers">Helping Others</h1>
+                <h1 id="live">LIVE <span id="italic">&</span> TRAVEL</h1>
+                <h1 id="specialOffers">Special offers to suit your plan</h1>
+            </div>
+            <div class="selector">
+                <div class="choiceBtn">
+                    <a class="button_link" href="http://127.0.0.1:3000/flightPage/index.html">
+                        <button class=" flights choice">
+                        <img src="../assets/airplane.svg"></img>
+                        <span>Flights</span>
+                        </button>
+                    </a>
+                    <div class="separator"></div>
+                    <a class="button_link" href="http://127.0.0.1:3000/hotelsPage/index.html">
+                        <button class="stays choice">
+                        <img src="../assets/bed.svg"></img>
+                        <span>Stays</span>
+                        </button>
+                    </a>
+                </div>
+                <form action="">
+                    <fieldset class="form_destination grow">
+                        <legend>From - To</legend>
+                        <input class="textField" type="text" placeholder="Lahore - Karachi">
+                        <img id="arrows" src="../assets/trailing-icon.svg" alt="">
+                    </fieldset> 
+                    <fieldset class="form_trip">
+                        <legend>Trip</legend>
+                        <input class="textField" list="flightType" placeholder="One-way">
+                        <datalist id="flightType">
+                            <option value="One-way"></option>
+                            <option value="Round-trip"></option>
+                        </datalist>
+                    </fieldset>
+                    <fieldset class="form_dates grow">
+                        <legend>Depart - Return</legend>
+                        <input class="textField" type="text" placeholder="07 Nov 23 - 13 Nov 23">
+                    </fieldset>
+                    <fieldset class="form_Passenger grow">
+                        <legend>Passenger - Class</legend>
+                        <input class="textField" type="text" placeholder="1 Passenger,Economy">
+                    </fieldset>
+                </form>
+                <br>
+                <div class="selector_button">
+                    <button class="promo_code">
+                        + Add Promo Code                        
+                    </button>
+                    <a class="button_link" href="http://127.0.0.1:3000/flightPage/index.html">
+                        <button class="show_flight">
+                        <img src="../assets/Paper Plane.svg" alt="">
+                        <span>Show Flights</span>
+                    </button>
+                    </a>
+                </div>
+            </div>
+            <div class="hero_section">
+                <div class="hero_section_top">
+                    <div class="text">
+                        <h2>Plan your perfect trip</h2>
+                        <p class="hero_section_p">Search Flights & Places Hire to our most popular destinations.</p>
+                    </div>
+                    <button class="hero_section_button">
+                        See more places
+                    </button>
+                </div>
+                <br>
+                <div class="destinations">
+                    <div id="istanbul" class="card">
+                        <img src="../assets/istanbul.svg" alt="">
+                        <div>
+                            <p class="city">Istanbul, Turkey</p>
+                            <p class="options">Flights &nbsp . &nbsp Hotels &nbsp . &nbsp  Resorts</p>
+                        </div>
+                        
+                    </div>
+                    <div id="sydney" class="card">
+                        <img src="../assets/sydney.svg" alt="">
+                        <div>
+                            <p class="city">Sysdney, Australia</p>
+                            <p class="options">Flights &nbsp . &nbsp Hotels &nbsp . &nbsp  Resorts</p>
+                        </div>
+                        
+                    </div>
+                    <div id="baku" class="card">
+                        <img src="../assets/baku.svg" alt="">
+                        <div>
+                            <p class="city">Baku, Azebaijan</p>
+                            <p class="options">Flights &nbsp . &nbsp Hotels &nbsp . &nbsp  Resorts</p>
+                        </div>
+                        
+                    </div>
+                    <div id="male" class="card">
+                        <img src="../assets/male.svg" alt="">
+                        <div>
+                            <p class="city">Malé, Maldives</p>
+                            <p class="options">Flights &nbsp . &nbsp Hotels &nbsp . &nbsp  Resorts</p>
+                        </div>
+                        
+                    </div>
+                    <div id="paris" class="card">
+                        <img src="../assets/paris.svg" alt="">
+                        <div>
+                            <p class="city">Paris, France</p>
+                            <p class="options">Flights &nbsp . &nbsp Hotels &nbsp . &nbsp  Resorts</p>
+                        </div>
+                        
+                    </div>
+                    <div id="newyork" class="card">
+                        <img src="../assets/newyork.svg" alt="">
+                        <div>
+                            <p class="city">New York, US</p>
+                            <p class="options">Flights &nbsp . &nbsp Hotels &nbsp . &nbsp  Resorts</p>
+                        </div>
+                        
+                    </div>
+                    <div id="london" class="card">
+                        <img src="../assets/london.svg" alt="">
+                        <div>
+                            <p class="city">London, UK</p>
+                            <p class="options">Flights &nbsp . &nbsp Hotels &nbsp . &nbsp  Resorts</p>
+                        </div>
+                        
+                    </div>
+                    <div id="Tokyo" class="card">
+                        <img src="../assets/tokyo.svg" alt="">
+                        <div>
+                            <p class="city">Tokto, Japan</p>
+                            <p class="options">Flights &nbsp . &nbsp Hotels &nbsp . &nbsp  Resorts</p>
+                        </div>
+                        
+                    </div>
+                    <div id="dubai" class="card">
+                        <img src="../assets/dubai.svg" alt="">
+                        <div>
+                            <p class="city">Dubai, UAE</p>
+                            <p class="options">Flights &nbsp . &nbsp Hotels &nbsp . &nbsp  Resorts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="showcase">
+                <div id="redirection_flights">
+                     <div class="reverse_overlay">
+                        <h2 class="flights_text">Flights</h2>
+                        <p class="searchFlights">Search Flights & Places Hire to our most popular destinations</p>
+                        <a class="button_link" href="http://127.0.0.1:3000/flightPage/index.html">
+                            <button class="show_flight">
+                            <img src="../assets/Paper Plane.svg" alt="">
+                            <span>Show Flights</span>
+                        </button>
+                        </a>
+                     </div>
+                </div>
+                <div id="redirection_hotels">
+                    <div class="reverse_overlay">
+                        <h2 class="flights_text">Hotels</h2>
+                        <p class="searchFlights">Search Hotels & Places Hire to our most popular destinations</p>
+                        <a class="button_link" href="http://127.0.0.1:3000/hotelsPage/index.html">
+                            <button class="show_flight flight_btn">
+                            <img src="../assets/Paper Plane.svg" alt="">
+                            <span>Show Hotels</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="reviews">
+                <div class="hero_section_top">
+                    <div class="text">
+                        <h2>Plan your perfect trip</h2>
+                        <p class="hero_section_p">Search Flights & Places Hire to our most popular destinations.</p>
+                    </div>
+                    <button class="hero_section_button see_all_button">
+                        See All
+                    </button>
+                </div>
+                <br>
+                <br>
+                <div class="reviews_content">
+                    <div class="reviews_card_background">
+                        <div class="reviews_card">
+                            <div class="reviews_header">
+                                <h3 id="reviews_title">“A real sense of community, nurtured”</h3>
+                                <p>Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for...</p>
+                                <h4>view more</h4>
+                            </div>
+                            <div class="reviews_rating">
+                                <img src="../assets/rating.svg" alt="">
+                                <h4>Olga</h4>
+                                <p class="reviews_source">Weave Studios - Kai Tak</p>
+                                <img src="../assets/google.svg" alt="">
+                            </div>
+                            <img class="review_image" src="../assets/review image1.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="reviews_card_background">
+                        <div class="reviews_card">
+                            <div class="reviews_header">
+                                <h3 id="reviews_title">“The facilities are superb. Clean, slick, bright.”</h3>
+                                <p>Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for</p>
+                                <h4>view more</h4>
+                            </div>
+                            <div class="reviews_rating">
+                                <img src="../assets/rating.svg" alt="">
+                                <h4>Olga</h4>
+                                <p class="reviews_source">Weave Studios - Kai Tak</p>
+                                <img src="../assets/google.svg" alt="">
+                            </div>
+                            <img class="review_image" src="../assets/review image2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="footer">
+                <div class="footer_content" >
+                    <div id="logo">
+                        <a href="#top"><img src="../assets/dark logo.svg" alt=""></a>
+                        <div class="links">
+                            <img src="../assets/facebook.svg" alt="">
+                            <img src="../assets/twitter.svg" alt="">
+                            <img src="../assets/youtube.svg" alt="">
+                            <img src="../assets/instagram.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="list">
+                        <h3>Our Destinations</h3>
+                        <ul class="footer_list">
+                            <li>Canada</li>
+                            <li>Alaska</li>
+                            <li>France</li>
+                            <li>Iceland</li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <h3>Our Activities</h3>
+                        <ul class="footer_list">
+                            <li>Northern Lights</li>
+                            <li>Cruising & Sailing</li>
+                            <li>Multi-activities</li>
+                            <li>Kayaing</li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <h3>About Us</h3>
+                        <ul class="footer_list">
+                            <li>Our Story</li>
+                            <li>Work with us</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+</body>
+</html>
